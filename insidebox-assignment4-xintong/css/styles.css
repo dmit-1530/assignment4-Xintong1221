@@ -1,0 +1,121 @@
+body {
+    background-color: #eee;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    width: 20.5rem;
+    height: 63.9375rem;
+    background-color: #FFFFFF;
+    border-right: .0625rem solid #DDDDDD;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #727B81;
+}
+
+h1 span {
+    color: #0A91DE;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #727B81;
+}
+
+.main-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: #666F74;
+    text-decoration: none;
+    padding: .5rem 0;
+    transition: color 0.2s ease;
+}
+
+.menu-link:hover {
+    color: #0A91DE;
+}
+
+.menu-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
+.arrow-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:100%;
+    margin-top: .25rem;
+    background-color: #FFFFFF;
+    border: .0625rem solid #0A91DE; 
+    border-radius: .25rem;
+    padding: .5rem 0;
+    min-width: 10.875rem;
+    list-style: none;
+    transition: visibility 0s, opacity 0.2s ease;
+}
+
+.has-dropdown:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #666F74;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.submenu-link:hover {
+    background-color: #EEEEEE;
+    color: #0A91DE;
+}
